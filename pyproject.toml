@@ -1,0 +1,20 @@
+[project]
+name = "project-pipelino"
+version = "0.1.0"
+description = "Pipelino - Just a lame but smort project to prove my worthiness to my lord."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.4.1",
+    "dotenv>=0.9.9",
+    "pandas>=3.0.3",
+    "pgcli>=4.5.0",
+    "psycopg[binary,pool]>=3.3.4",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.0.51",
+]
+
+[dependency-groups]
+dev = [
+    "pgcli>=4.5.0",
+]
