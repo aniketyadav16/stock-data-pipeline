@@ -16,7 +16,7 @@
 
 #### The data is first inserted into the staging table and then merged into the production table using an upsert operation. 
 
-#### The staging table is truncated after the merge to ensure idempotency. Data is stored in the production table with a hash_id column to ensure uniqueness and prevent duplicates.
+#### The staging table is truncated after the merge to ensure idempotency. Data is stored in the production table with a hash_id column to ensure uniqueness and prevent duplicates. hash_id is an augmented column made using the md5 hashing algo.
 
 #### The project uses the following libraries: requests, pandas, sqlalchemy, click.
 
